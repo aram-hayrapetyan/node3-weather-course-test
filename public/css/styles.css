@@ -1,0 +1,36 @@
+body {
+    font-family: sans-serif;
+    color: #363636;
+    padding: 0 16px;
+    margin: 0 auto;
+    min-width: 600px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: right;
+    box-shadow: 2px 2px 2px 2px #363636;
+    margin: 10px;
+}
+
+.tabs a {
+    padding: 10px 10px;
+    color: #363636;
+    text-decoration: none;
+}
+
+.tabs a:hover {
+    background-color: #a0a0a0;
+    color: blue;
+}
+
+img {
+    width: 200px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    font-size: 13px;
+}
