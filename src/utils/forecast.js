@@ -10,7 +10,7 @@ const forecast = (cordiantes, callback) => {
             callback('Unable to get location!', undefined)
         } else {
             const current_data = body.current
-            const message = `${current_data.weather_descriptions[0]}. It is currently ${current_data.temperature} deggress out. It feels like ${current_data.feelslike} deggress out.`
+            const message = `<img id="weather-icon" src=${current_data.weather_icons}> ${current_data.weather_descriptions[0]}. It is currently ${current_data.temperature} deggress out. It feels like ${current_data.feelslike} deggress out.`
             callback(undefined, message)
         }
     })

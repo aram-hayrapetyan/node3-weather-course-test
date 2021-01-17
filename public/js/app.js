@@ -2,6 +2,7 @@ const weather_form = document.querySelector('form')
 const input = document.querySelector('input')
 const message_1 = document.querySelector('#message-1')
 const message_2 = document.querySelector('#message-2')
+const message_3 = document.querySelector('#message-3')
 
 weather_form.addEventListener('submit', (e) => {
     e.preventDefault()
@@ -10,6 +11,7 @@ weather_form.addEventListener('submit', (e) => {
 
     message_1.textContent = 'Loading...'
     message_2.textContent = ''
+    message_3.innerHTML = ''
 
     fetch('/weather?address='+location).then(response => {
         response.json().then(data => {
@@ -19,6 +21,7 @@ weather_form.addEventListener('submit', (e) => {
                 console.log(data)
                 message_1.textContent = data.location
                 message_2.textContent = data.address
+                message_3.innerHTML = data.message
             }
         })
     });    

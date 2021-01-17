@@ -34,3 +34,7 @@ img {
     padding: 10px;
     font-size: 13px;
 }
+
+#weather-icon {
+    width: 36px;
+}
